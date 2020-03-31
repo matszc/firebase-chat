@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "bezimienni-chat": {
@@ -121,8 +121,16 @@
               "devServerTarget": "bezimienni-chat:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "bezimienni-chat"
+    }
+  },
+  "defaultProject": "bezimienni-chat",
+  "cli": {
+    "analytics": "16f3f3f5-3484-4296-92d9-b5988f20ea47"
+  }
 }

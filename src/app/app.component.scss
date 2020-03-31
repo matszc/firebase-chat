@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+
+  .logo {
+    max-width: 300px;
+    margin: 10px;
+  }
+
+  .chat {
+    width: 50vw;
+    border: 1px solid black;
+    padding: 5px;
+
+    .chat_list {
+      margin-left: 20px;
+      height: 30vh;
+      overflow-y: scroll;
+
+      .message {
+        margin: 2px;
+
+        &:nth-child(odd) {
+          color: aqua;
+        }
+      }
+    }
+
+    .chat_send {
+      display: flex;
+
+      .input {
+        margin: 5px;
+
+        label {
+          margin: 5px;
+        }
+
+        input {
+          margin: 5px
+        }
+      }
+
+      button {
+        margin: 5px;
+      }
+    }
+  }
+}
